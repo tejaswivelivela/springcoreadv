@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:annotation-config/>
+<bean class="com.teju.spring.springcoreadv.autowire.annotations.Address" id="hai1"
+  name="address1" p:hno="143" p:street="lexington" p:city="san antonio"/>
+  
+  <bean class="com.teju.spring.springcoreadv.autowire.annotations.Address" id="hai2"
+  name="address2" p:hno="1432" p:street="lexington" p:city="san antonio"/>
+  
+ <bean class="com.teju.spring.springcoreadv.autowire.annotations.Employee" name="employee"/>
+
+</beans>
